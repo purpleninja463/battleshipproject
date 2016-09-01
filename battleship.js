@@ -34,13 +34,14 @@ for (i = 0; i < cols; i++) {
 		square.className = "boardSquare";
 
 		// THIS IS WHERE YOU WILL ADD CODE FOR PART 1 TO ADD TEXT TO EACH SQUARE
-
 		// set each grid square's coordinates: multiples of the current row or column number
+		square.textContent =+1;
+
 		var topPosition = j * squareSize;
 		var leftPosition = i * squareSize;
 
-		// use CSS absolute positioning to place each grid square on the page
 		square.style.top = topPosition + 'px';
+		// use CSS absolute positioning to place each grid square on the page
 		square.style.left = leftPosition + 'px';
 	}
 }
@@ -57,7 +58,8 @@ var gameBoard = [
 				[1,0,0,1,0,0,0,0,0,0],
 				[1,0,0,1,0,0,0,0,0,0],
 				[1,0,0,0,0,0,0,0,0,0]
-				]
+]
+			
 
 function fireTorpedo() {
 
