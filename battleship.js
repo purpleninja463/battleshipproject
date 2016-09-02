@@ -2,6 +2,7 @@
 var rows = 10;
 var cols = 10;
 var squareSize = 50;
+	var letterArray = ["A", "B", "C", "D","E","F","G","H","I","J"]
 
 // gets the container element
 var gameBoardContainer = document.getElementById("gameboard");
@@ -35,7 +36,9 @@ for (i = 0; i < cols; i++) {
 
 		// THIS IS WHERE YOU WILL ADD CODE FOR PART 1 TO ADD TEXT TO EACH SQUARE
 		// set each grid square's coordinates: multiples of the current row or column number
-		square.textContent =+1;
+		
+			square.textContent = i+1+
+		letterArray[j]
 
 		var topPosition = j * squareSize;
 		var leftPosition = i * squareSize;
@@ -59,7 +62,7 @@ var gameBoard = [
 				[1,0,0,1,0,0,0,0,0,0],
 				[1,0,0,0,0,0,0,0,0,0]
 ]
-			
+
 
 function fireTorpedo() {
 
